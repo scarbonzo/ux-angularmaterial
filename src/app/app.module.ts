@@ -17,6 +17,9 @@ import {
   MatCardModule,
   MatGridListModule
 } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { EventsService } from './events.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,6 @@ import {
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
@@ -34,9 +36,13 @@ import {
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    FlexLayoutModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    EventsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
