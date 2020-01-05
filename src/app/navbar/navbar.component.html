@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span routerLink="/home">Rich's Template</span>
+        <span class="menu-spacer"></span>
+        <div>
+            <a mat-button [routerLink]="'/home'" routerLinkActive="text-yellow">Home</a>
+        </div>
+        <span class="fill-remaining-space"></span>
+        <span><button mat-raised-button color="warn" (click)="sendEmail();">HELP</button></span>
+    </mat-toolbar-row>
+</mat-toolbar>
